@@ -162,8 +162,6 @@
 
    The prototype on object instance is available through **Object.getPrototypeOf(object)** or **\_\_proto\_\_** property whereas prototype on constructor function is available through **Object.prototype**.
 
-   ![Screenshot](images/prototype_chain.png)
-
    **[⬆ Back to Top](#table-of-contents)**
 
 3. ### What is the difference between Call, Apply and Bind

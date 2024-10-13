@@ -22,7 +22,7 @@
 
       ```javascript
       var object = {
-           name: "Sudheer",
+           name: "Shailender",
            age: 34
       };
       ```
@@ -85,7 +85,7 @@
         this.name = name;
         this.age = 21;
       }
-      var object = new Person("Sudheer");
+      var object = new Person("Shailender");
       ```
 
    5. **Function constructor with prototype:**
@@ -94,7 +94,7 @@
 
       ```javascript
       function Person() {}
-      Person.prototype.name = "Sudheer";
+      Person.prototype.name = "Shailender";
       var object = new Person();
       ```
 
@@ -141,7 +141,7 @@
         }
       }
 
-      var object = new Person("Sudheer");
+      var object = new Person("Shailender");
       ```
 
    8. **Singleton pattern:**
@@ -150,7 +150,7 @@
 
       ```javascript
       var object = new (function () {
-        this.name = "Sudheer";
+        this.name = "Shailender";
       })();
       ```
 
@@ -173,8 +173,8 @@
    **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one
 
    ```javascript
-   var employee1 = { firstName: "John", lastName: "Rodson" };
-   var employee2 = { firstName: "Jimmy", lastName: "Baily" };
+   var employee1 = { firstName: "Geek", lastName: "Shailender" };
+   var employee2 = { firstName: "Dhara", lastName: "Thakur" };
 
    function invite(greeting1, greeting2) {
      console.log(
@@ -182,15 +182,15 @@
      );
    }
 
-   invite.call(employee1, "Hello", "How are you?"); // Hello John Rodson, How are you?
-   invite.call(employee2, "Hello", "How are you?"); // Hello Jimmy Baily, How are you?
+   invite.call(employee1, "Hello", "How are you?"); // Hello Geek Shailender, How are you?
+   invite.call(employee2, "Hello", "How are you?"); // Hello Dhara Thakur, How are you?
    ```
 
    **Apply:** Invokes the function with a given `this` value and allows you to pass in arguments as an array
 
    ```javascript
-   var employee1 = { firstName: "John", lastName: "Rodson" };
-   var employee2 = { firstName: "Jimmy", lastName: "Baily" };
+   var employee1 = { firstName: "Geek", lastName: "Shailender" };
+   var employee2 = { firstName: "Dhara", lastName: "Thakur" };
 
    function invite(greeting1, greeting2) {
      console.log(
@@ -198,15 +198,15 @@
      );
    }
 
-   invite.apply(employee1, ["Hello", "How are you?"]); // Hello John Rodson, How are you?
-   invite.apply(employee2, ["Hello", "How are you?"]); // Hello Jimmy Baily, How are you?
+   invite.apply(employee1, ["Hello", "How are you?"]); // Hello Geek Shailender, How are you?
+   invite.apply(employee2, ["Hello", "How are you?"]); // Hello Dhara Thakur, How are you?
    ```
 
    **Bind:** returns a new function, allowing you to pass any number of arguments
 
    ```javascript
-   var employee1 = { firstName: "John", lastName: "Rodson" };
-   var employee2 = { firstName: "Jimmy", lastName: "Baily" };
+   var employee1 = { firstName: "Geek", lastName: "Shailender" };
+   var employee2 = { firstName: "Dhara", lastName: "Thakur" };
 
    function invite(greeting1, greeting2) {
      console.log(
@@ -216,8 +216,8 @@
 
    var inviteEmployee1 = invite.bind(employee1);
    var inviteEmployee2 = invite.bind(employee2);
-   inviteEmployee1("Hello", "How are you?"); // Hello John Rodson, How are you?
-   inviteEmployee2("Hello", "How are you?"); // Hello Jimmy Baily, How are you?
+   inviteEmployee1("Hello", "How are you?"); // Hello Geek Shailender, How are you?
+   inviteEmployee2("Hello", "How are you?"); // Hello Dhara Thakur, How are you?
    ```
 
    Call and Apply are pretty much interchangeable. Both execute the current function immediately. You need to decide whether it’s easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for **comma** (separated list) and Apply is for **Array**.
